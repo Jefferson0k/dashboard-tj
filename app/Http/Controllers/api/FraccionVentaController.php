@@ -10,10 +10,12 @@ use Illuminate\Http\Request;
 
 class FraccionVentaController extends Controller{
     
-    public function index(Request $request){
+    public function index(Request $request) {
         $periodo = $request->input('Periodo');
         $mes = $request->input('mes');
         $ejecutora = $request->input('ejecutora');
+        $search = $request->input('search');
+
         if (is_null($periodo) || $periodo === '') {
             return response()->json(['error' => 'El campo Periodo es requerido.'], 400);
         }
@@ -23,19 +25,39 @@ class FraccionVentaController extends Controller{
         if (is_null($ejecutora) || $ejecutora === '') {
             return response()->json(['error' => 'El campo Ejecutora es requerido.'], 400);
         }
+
         $query = i_atencioncierreModels::query();
         $query->where('Periodo', $periodo)
             ->where('mes', $mes)
             ->where('ejecutora', $ejecutora);
+
+        if (!is_null($search) && $search !== '') {
+            $query->where(function ($q) use ($search) {
+                $q->where('ate_appat', 'like', "%$search%")
+                ->orWhere('ate_dnipersonalsalud', 'like', "%$search%")
+                ->orWhere('ate_dni', 'like', "%$search%")
+                ->orWhere('ate_apmat', 'like', "%$search%")
+                ->orWhere('ate_pnom', 'like', "%$search%")
+                ->orWhere('ate_snom', 'like', "%$search%")
+                ->orWhere('Observado_SME', 'like', "%$search%")
+                ->orWhere('CodigoEESS', 'like', "%$search%")
+                ->orWhere('destino', 'like', "%$search%")
+                ->orWhere('ValorNeto', 'like', "%$search%")
+                ->orWhere('valorNetoServ', 'like', "%$search%")
+                ->orWhere('ValorBruto', 'like', "%$search%");
+            });
+        }
+
         $fraccionventas = $query->paginate(100);
+
         return response()->json([
-            'data' => $fraccionventas->items(),
+            'data' => i_atencioncierreResource::collection($fraccionventas->items()),
             'pagination' => [
                 'current_page' => $fraccionventas->currentPage(),
                 'last_page' => $fraccionventas->lastPage(),
                 'per_page' => $fraccionventas->perPage(),
                 'total' => $fraccionventas->total(),
-            ]
+            ],
         ]);
     }
 

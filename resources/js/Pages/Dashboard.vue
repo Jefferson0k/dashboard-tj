@@ -1,43 +1,27 @@
 <template>
-    <Head title="Dashboard" />
     <AuthenticatedLayout>
         <div>
             <br />
             <Card class="mr-2">
                 <template #content>
-                    <div class="flex flex-col gap-4">
-                        <!-- Selección de Periodo -->
-                        <div class="relative">
-                            <label for="periodo" class="block text-sm font-medium text-gray-700 mb-1">Periodo:</label>
+                    <Toolbar>
+                        <template #start>
                             <Select id="periodo" v-model="periodo" :options="years" placeholder="Selecciona un año"
-                                class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
-                            <ProgressSpinner v-if="loading" style="width: 20px; height: 20px"
-                                class="absolute right-2 top-8" />
-                        </div>
-
-                        <!-- Selección de Ejecutora -->
-                        <div class="relative">
-                            <label for="ejecutora" class="block text-sm font-medium text-gray-700 mb-1">Ejecutora:</label>
+                                class="w-96" />
+                        </template>
+                        <template #center>
                             <Select id="ejecutora" v-model="ejecutora" :options="ejecutoras"
                                 placeholder="Selecciona una ejecutora"
-                                class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
-                            <ProgressSpinner v-if="loading" style="width: 20px; height: 20px"
-                                class="absolute right-2 top-8" />
-                        </div>
-
-                        <!-- Selección de Mes -->
-                        <div class="relative">
-                            <label for="mes" class="block text-sm font-medium text-gray-700 mb-1">Mes:</label>
+                                class="w-96" />
+                        </template>
+                        <template #end>
                             <Select id="mes" v-model="mes" :options="months" optionLabel="name" optionValue="value"
                                 placeholder="Selecciona un mes"
-                                class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
-                            <ProgressSpinner v-if="loading" style="width: 20px; height: 20px"
-                                class="absolute right-2 top-8" />
-                        </div>
-                    </div>
+                                class="w-96" />
+                        </template>
+                    </Toolbar>
                 </template>
             </Card>
-
             <br />
             <Card class="w-full max-w-full bg-white shadow-md rounded-md">
                 <template #content>
@@ -50,26 +34,26 @@
                         currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} registros"
                         class="p-datatable-striped" :scrollable="true" scrollHeight="400px" :filters="filters"
                         filterDisplay="menu"
-                        :globalFilterFields="['Periodo', 'Observado_SME', 'CodigoEESS', 'destino', 'ValorNeto', 'valorNetoServ', 'ValorBruto', 'NuevoOjo']">
+                        :globalFilterFields="['ate_dnipersonalsalud','ate_dni','nombre_completo', 'nombres', 'Observado_SME', 'CodigoEESS', 'destino', 'ValorNeto', 'valorNetoServ', 'ValorBruto', 'NuevoOjo']">
                         <template #header>
                             <div class="flex justify-between items-center p-4">
                                 <h3 class="text-xl font-semibold text-gray-800">Registros</h3>
                                 <div>
-                                    <InputText v-model="filters.global.value" placeholder="Buscar..."
-                                        class="p-inputtext-sm" />
+                                    <InputText v-model="filters.global.value" placeholder="Buscar..." class="p-inputtext-sm" />
                                 </div>
                             </div>
                         </template>
-
                         <!-- Definición de las columnas -->
-                        <Column field="Periodo" header="Periodo" sortable class="min-w-[12rem]" />
-                        <Column field="Observado_SME" header="Observaciones" sortable class="min-w-[10rem]" />
-                        <Column field="CodigoEESS" header="Código EESS" sortable class="min-w-[10rem]" />
-                        <Column field="destino" header="Destino" sortable class="min-w-[12rem]" />
-                        <Column field="ValorNeto" header="Neto" sortable class="min-w-[12rem]" />
-                        <Column field="valorNetoServ" header="Servicio" sortable class="min-w-[14rem]" />
-                        <Column field="ValorBruto" header="Bruto" sortable class="min-w-[8rem]" />
-
+                        <Column field="ate_dnipersonalsalud" header="Personal" sortable style="min-width: 2rem" />
+                        <Column field="ate_dni" header="Paciente" sortable style="min-width: 2rem" />
+                        <Column field="nombre_completo" header="Apellidos" sortable class="min-w-[12rem]" />
+                        <Column field="nombres" header="Nombres" sortable class="min-w-[12rem]" />
+                        <Column field="Observado_SME" header="Observaciones" style="min-width: 2rem" />
+                        <Column field="CodigoEESS" header="C. EESS" sortable style="min-width: 2rem" />
+                        <Column field="destino" header="Destino" sortable style="min-width: 2rem" />
+                        <Column field="ValorNeto" header="Neto" sortable style="min-width: 2rem" />
+                        <Column field="valorNetoServ" header="Servicio" sortable style="min-width: 2rem" />
+                        <Column field="ValorBruto" header="Bruto" sortable style="min-width: 2rem" />
                         <!-- Nueva columna con ícono para ver detalle -->
                         <Column class="min-w-[1rem]">
                             <template #body="slotProps">
@@ -82,7 +66,10 @@
                 </template>
             </Card>
         </div>
-
+        <!-- Spinner global -->
+        <div v-if="loadingDetail" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+            <ProgressSpinner />
+        </div>
         <!-- Diálogo para mostrar los detalles del registro -->
         <Dialog 
             v-model:visible="dialogVisible" 
@@ -93,11 +80,8 @@
             :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
             :contentStyle="{ position: 'relative' }"
         >
-            <div v-if="loadingDetail" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                <ProgressSpinner />
-            </div>
-
-            <DataTable v-if="!loadingDetail" :value="detalleData" class="p-datatable-striped">
+            <!-- Tabla con los datos cargados -->
+            <DataTable :value="detalleData" class="p-datatable-striped">
                 <Column field="TIPOCONSUMO" header="Tipo Consumo" />
                 <Column field="CODIGO" header="Código" />
                 <Column field="CANTIDAD" header="Cantidad" />
@@ -128,6 +112,7 @@ import ProgressBar from 'primevue/progressbar';
 import Dialog from 'primevue/dialog';
 import 'primeicons/primeicons.css';
 import ProgressSpinner from 'primevue/progressspinner';
+import Toolbar from 'primevue/toolbar';
 
 const periodo = ref(null);
 const mes = ref(null);
@@ -138,9 +123,10 @@ const filters = ref({
         value: null
     }
 });
+
 const selectedRow = ref(null)
 const loading = ref(false);
-const loadingDetail = ref(false);  // Nueva variable para controlar la carga del modal
+const loadingDetail = ref(false);
 const totalRecords = ref(0);
 const currentPage = ref(1);
 const perPage = ref(100);
@@ -163,17 +149,19 @@ const months = [
 ];
 const dialogVisible = ref(false);
 const selectedRecord = ref(null);
-const detalleData = ref([]);  // Nueva variable para almacenar los datos del detalle
+const detalleData = ref([]);
 
 const fetchData = async (page = 1) => {
     loading.value = true;
     fraccionventas.value = [];
     try {
+        const search = filters.value?.global?.value || ''; // Manejo seguro de `filters.global.value`
         const response = await axios.get('/fraccionventas', {
             params: {
                 Periodo: periodo.value,
                 mes: mes.value,
                 ejecutora: ejecutora.value,
+                search: search, // Parámetro de búsqueda
                 page: page
             }
         });
@@ -198,22 +186,25 @@ const onPage = (event) => {
 };
 
 const verDetalle = async (id) => {
-    loadingDetail.value = true;  // Mostrar el spinner de carga del modal
+    loadingDetail.value = true; 
+    dialogVisible.value = false; 
+
     try {
         const response = await axios.get(`/atencion-cierre-consumosmed/${id}`);
         if (response.data && response.data.data) {
-            selectedRecord.value = response.data.data;
-            detalleData.value = response.data.data;  // Asignar los datos a detalleData
-            dialogVisible.value = true;  // Mostrar el diálogo
+            detalleData.value = response.data.data; 
         }
     } catch (err) {
         console.error('Error al obtener los detalles:', err);
+        detalleData.value = []; 
     } finally {
-        loadingDetail.value = false;  // Ocultar el spinner de carga del modal
+        loadingDetail.value = false; 
+        dialogVisible.value = true; 
     }
 };
 
-watch([periodo, mes, ejecutora], () => fetchData(1), {
+watch([periodo, mes, ejecutora, () => filters.value?.global?.value], () => fetchData(1), {
     immediate: true
 });
+
 </script>
