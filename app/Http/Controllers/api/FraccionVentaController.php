@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\api;
+
 use App\Http\Controllers\Controller;
 use App\Http\Resources\i_atencioncierreResource;
 use App\Models\i_atencioncierre_consumosmed;
 use App\Models\i_atencioncierreModels;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class FraccionVentaController extends Controller{
@@ -34,6 +34,7 @@ class FraccionVentaController extends Controller{
         if (!is_null($search) && $search !== '') {
             $query->where(function ($q) use ($search) {
                 $q->where('ate_appat', 'like', "%$search%")
+                ->orWhere('ate_idnumreg', 'like', "%$search%")
                 ->orWhere('ate_dnipersonalsalud', 'like', "%$search%")
                 ->orWhere('ate_dni', 'like', "%$search%")
                 ->orWhere('ate_apmat', 'like', "%$search%")
@@ -65,6 +66,4 @@ class FraccionVentaController extends Controller{
         $registros = i_atencioncierre_consumosmed::where('IDNUMREGATE', $idnumregate)->get();
         return response()->json(['data' => $registros], 200);
     }
-
-
 }

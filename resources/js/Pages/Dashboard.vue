@@ -55,180 +55,194 @@
                         <!-- Definición de las columnas -->
                         <Column field="Periodo" header="Periodo" sortable style="min-width: 2rem" />
                         <Column field="Mes" header="Mes" sortable style="min-width: 2rem" />
-                        <column field="Observado_PSA" header="Observaciones PSA" style="min-width: 2rem" />
-                        <Column field="Observado_SME" header="Observaciones SME" style="min-width: 2rem" />
+                        <column field="Observado_PSA" header="Observado_PSA" style="min-width: 2rem" />
+                        <Column field="Observado_SME" header="Observado_SME" style="min-width: 2rem" />
                         <Column field="Disa" header="Disa" sortable style="min-width: 2rem" />
-                        <Column field="CodigoEESS" header="C. EESS" sortable style="min-width: 2rem" />
+                        <Column field="CodigoEESS" header="CodigoEESS" sortable style="min-width: 2rem" />
                         <Column field="Ejecutora" header="Ejecutora" sortable style="min-width: 2rem" />
                         <Column field="Categoria" header="Categoria" sortable style="min-width: 2rem" />
                         <Column field="Servicio" header="Servicio" sortable style="min-width: 2rem" />
-                        <Column field="ServicioDesc" header="Servicio Descripción" sortable style="min-width: 2rem" />
-                        <Column field="ate_codate" header="Código ATE" sortable style="min-width: 2rem" />
-                        <Column field="ate_coddestino" header="Código Destino" sortable style="min-width: 2rem" />
+                        <Column field="ServicioDesc" header="ServicioDesc" sortable style="min-width: 2rem" />
+                        <Column field="ate_codate" header="ate_codate" sortable style="min-width: 2rem" />
+                        <Column field="ate_coddestino" header="ate_coddestino" sortable style="min-width: 2rem" />
                         <column field="destino" header="destino" sortable style="min-width: 2rem" />
-                        <Column field="ValorNeto" header="Valor Neto" sortable style="min-width: 2rem" />
-                        <Column fiel="valorNetoServ" header="Valor Neto Servicio" sortable style="min-width: 2rem" />
-                        <Column field="valorNetoMedi" header="Neto Medicamentos" sortable style="min-width: 2rem" />
-                        <Column field="valorNetoProc" header="Neto Procedimientos" sortable style="min-width: 2rem" />
-                        <Column field="valorNetoInsu" header="Neto Insumos" sortable style="min-width: 2rem" />
-                        <Column field="ValorBruto" header="Valor Bruto" sortable style="min-width: 2rem" />
-                        <Column field="valorBrutoServ" header="Bruto Servicios" sortable style="min-width: 2rem" />
-                        <Column field="valorbrutoMedi" header="Bruto Medicamentos" sortable style="min-width: 2rem" />
-                        <Column field="valorbrutopro" header="Bruto Procedimientos" sortable style="min-width: 2rem" />
-                        <Column field="valorbrutoins" header="Bruto Insumos" sortable style="min-width: 2rem" />
-                        <Column field="ate_idlugar" header="ID Lugar" sortable style="min-width: 2rem" />
+                        <Column field="ValorNeto" header="ValorNeto" sortable style="min-width: 2rem" />
+                        <Column fiel="valorNetoServ" header="valorNetoServ" sortable style="min-width: 2rem" />
+                        <Column field="valorNetoMedi" header="valorNetoMedi" sortable style="min-width: 2rem" />
+                        <Column field="valorNetoProc" header="valorNetoProc" sortable style="min-width: 2rem" />
+                        <Column field="valorNetoInsu" header="valorNetoInsu" sortable style="min-width: 2rem" />
+                        <Column field="ValorBruto" header="ValorBruto" sortable style="min-width: 2rem" />
+                        <Column field="valorBrutoServ" header="valorBrutoServ" sortable style="min-width: 2rem" />
+                        <Column field="valorbrutoMedi" header="valorbrutoMedi" sortable style="min-width: 2rem" />
+                        <Column field="valorbrutopro" header="valorbrutopro" sortable style="min-width: 2rem" />
+                        <Column field="valorbrutoins" header="valorbrutoins" sortable style="min-width: 2rem" />
+                        <Column field="ate_idlugar" header="ate_idlugar" sortable style="min-width: 2rem" />
                         <Column field="Capita" header="Capita" sortable style="min-width: 2rem" />
                         <Column field="Componente" header="Componente" sortable style="min-width: 2rem" />
                         <Column field="Finalidad" header="Finalidad" sortable style="min-width: 2rem" />
                         <Column field="RM" header="RM" sortable style="min-width: 2rem" />
-                        <Column field="ParaEstadistica" header="Para Estadística" sortable style="min-width: 2rem" />
-                        <Column field="TipoPago" header="Tipo Pago" sortable style="min-width: 2rem" />
-                        <Column field="ModalidadAtencion" header="Modalidad Atención" sortable style="min-width: 2rem" />
+                        <Column field="ParaEstadistica" header="ParaEstadistica" sortable style="min-width: 2rem" />
+                        <Column field="TipoPago" header="TipoPago" sortable style="min-width: 2rem" />
+                        <Column field="ModalidadAtencion" header="ModalidadAtencion" sortable style="min-width: 2rem" />
                         <Column field="FUA" header="FUA" sortable style="min-width: 2rem" />
                         <Column field="Contrato" header="Contrato" sortable style="min-width: 2rem" />
-                        <Column field="ate_idnumreg" header="ID Registro" sortable style="min-width: 2rem" />
-                        <Column field="ate_tipdig" header="Tipo Dig" sortable style="min-width: 2rem" />
-                        <Column field="ate_odsis" header="ODSIS" sortable style="min-width: 2rem" />
-                        <Column field="ate_idppdd" header="ID PPDD" sortable style="min-width: 2rem" />
-                        <Column field="ate_odsisrecep" header="ODSIS Recep" sortable style="min-width: 2rem" />
-                        <Column field="ate_pdigrecep" header="P Dig Recep" sortable style="min-width: 2rem" />
-                        <Column field="ate_estado" header="Estado" sortable style="min-width: 2rem" />
-                        <Column field="ate_aus" header="AUS" sortable style="min-width: 2rem" />
-                        <Column field="ate_disa" header="ATE Disa" sortable style="min-width: 2rem" />
-                        <Column field="ate_lote" header="Lote" sortable style="min-width: 2rem" />
-                        <Column field="ate_numregate" header="Num Reg ATE" sortable style="min-width: 2rem" />
-                        <Column field="ate_autogenerado" header="Autogenerado" sortable style="min-width: 2rem" />
-                        <Column field="ate_edad" header="Edad" sortable style="min-width: 2rem" />
-                        <Column field="ate_fecatencion" header="Fecha Atención" sortable style="min-width: 2rem" />
-                        <Column field="ate_appat" header="Apellido Paterno" sortable style="min-width: 2rem" />
-                        <Column field="ate_apmat" header="Apellido Materno" sortable style="min-width: 2rem" />
-                        <Column field="ate_pnom" header="Primer Nombre" sortable style="min-width: 2rem" />
-                        <Column field="ate_snom" header="Segundo Nombre" sortable style="min-width: 2rem" />
-                        <Column field="ate_fecnac" header="Fecha Nacimiento" sortable style="min-width: 2rem" />
-                        <Column field="ate_idsexo" header="Sexo" sortable style="min-width: 2rem" />
-                        <Column field="FechaCreacion" header="Fecha Creación" sortable style="min-width: 2rem" />
-                        <Column field="ate_esgestante" header="Es Gestante" sortable style="min-width: 2rem" />
-                        <Column field="ate_fecparto" header="Fecha Parto" sortable style="min-width: 2rem" />
-                        <Column field="ate_ideessrefirio" header="ID EESS Refirió" sortable style="min-width: 2rem" />
-                        <Column field="ate_nrohojareferencia" header="Nro Hoja Referencia" sortable style="min-width: 2rem" />
-                        <Column field="ate_ideesscontrarefiere" header="ID EESS Contrarefiere" sortable style="min-width: 2rem" />
-                        <Column field="ate_numhojacontrarefiere" header="Nro Hoja Contrarefiere" sortable style="min-width: 2rem" />
-                        <Column field="ate_idorigenpersonal" header="ID Origen Personal" sortable style="min-width: 2rem" />
-                        <Column field="ate_tipodocpersonalsalud" header="Tipo Doc Personal" sortable style="min-width: 2rem" />
-                        <Column field="pes_colegiatura" header="Colegiatura" sortable style="min-width: 2rem" />
-                        <Column field="ate_especialidad" header="Especialidad" sortable style="min-width: 2rem" />
-                        <Column field="ate_tipo_personal_salud" header="Tipo Personal Salud" sortable style="min-width: 2rem" />
-                        <Column field="SubPrograma_Funcional" header="SubPrograma Funcional" sortable style="min-width: 2rem" />
-                        <Column field="Programa_PPTAL" header="Programa PPTAL" sortable style="min-width: 2rem" />
-                        <Column field="Producto_Proyecto" header="Producto Proyecto" sortable style="min-width: 2rem" />
-                        <Column field="Activ_Obra_Accinv" header="Activ Obra Accinv" sortable style="min-width: 2rem" />
+                        <Column field="ate_idnumreg" header="ate_idnumreg" sortable style="min-width: 2rem" />
+                        <Column field="ate_tipdig" header="ate_tipdig" sortable style="min-width: 2rem" />
+                        <Column field="ate_odsis" header="ate_odsis" sortable style="min-width: 2rem" />
+                        <Column field="ate_idppdd" header="ate_idppdd" sortable style="min-width: 2rem" />
+                        <Column field="ate_odsisrecep" header="ate_odsisrecep" sortable style="min-width: 2rem" />
+                        <Column field="ate_pdigrecep" header="ate_pdigrecep" sortable style="min-width: 2rem" />
+                        <Column field="ate_estado" header="ate_estado" sortable style="min-width: 2rem" />
+                        <Column field="ate_aus" header="ate_aus" sortable style="min-width: 2rem" />
+                        <Column field="ate_disa" header="ate_disa" sortable style="min-width: 2rem" />
+                        <Column field="ate_lote" header="ate_lote" sortable style="min-width: 2rem" />
+                        <Column field="ate_numregate" header="ate_numregate" sortable style="min-width: 2rem" />
+                        <Column field="ate_autogenerado" header="ate_autogenerado" sortable style="min-width: 2rem" />
+                        <Column field="ate_edad" header="ate_edad" sortable style="min-width: 2rem" />
+                        <Column field="ate_fecatencion" header="ate_fecatencion" sortable style="min-width: 2rem" />
+                        <Column field="ate_appat" header="ate_appat" sortable style="min-width: 2rem" />
+                        <Column field="ate_apmat" header="ate_apmat" sortable style="min-width: 2rem" />
+                        <Column field="ate_pnom" header="ate_pnom" sortable style="min-width: 2rem" />
+                        <Column field="ate_snom" header="ate_snom" sortable style="min-width: 2rem" />
+                        <Column field="ate_fecnac" header="ate_fecnac" sortable style="min-width: 2rem" />
+                        <Column field="ate_idsexo" header="ate_idsexo" sortable style="min-width: 2rem" />
+                        <Column field="FechaCreacion" header="FechaCreacion" sortable style="min-width: 2rem" />
+                        <Column field="ate_esgestante" header="ate_esgestante" sortable style="min-width: 2rem" />
+                        <Column field="ate_fecparto" header="ate_fecparto" sortable style="min-width: 2rem" />
+                        <Column field="ate_ideessrefirio" header="ate_ideessrefirio" sortable style="min-width: 2rem" />
+                        <Column field="ate_nrohojareferencia" header="ate_nrohojareferencia" sortable style="min-width: 2rem" />
+                        <Column field="ate_ideesscontrarefiere" header="ate_ideesscontrarefiere" sortable style="min-width: 2rem" />
+                        <Column field="ate_numhojacontrarefiere" header="ate_numhojacontrarefiere" sortable style="min-width: 2rem" />
+                        <Column field="ate_idorigenpersonal" header="ate_idorigenpersonal" sortable style="min-width: 2rem" />
+                        <Column field="ate_tipodocpersonalsalud" header="ate_tipodocpersonalsalud" sortable style="min-width: 2rem" />
+                        <Column field="pes_colegiatura" header="pes_colegiatura" sortable style="min-width: 2rem" />
+                        <Column field="ate_especialidad" header="ate_especialidad" sortable style="min-width: 2rem" />
+                        <Column field="ate_tipo_personal_salud" header="ate_tipo_personal_salud" sortable style="min-width: 2rem" />
+                        <Column field="SubPrograma_Funcional" header="SubPrograma_Funcional" sortable style="min-width: 2rem" />
+                        <Column field="Programa_PPTAL" header="Programa_PPTAL" sortable style="min-width: 2rem" />
+                        <Column field="Producto_Proyecto" header="Producto_Proyecto" sortable style="min-width: 2rem" />
+                        <Column field="Activ_Obra_Accinv" header="Activ_Obra_Accinv" sortable style="min-width: 2rem" />
                         <Column field="Nivel" header="Nivel" sortable style="min-width: 2rem" />
-                        <Column field="ate_coddiag1" header="Código Diagnóstico" sortable style="min-width: 2rem" />
-                        <Column field="ate_dni" header="DNI" sortable style="min-width: 2rem" />
-                        <Column field="region" header="Región" sortable style="min-width: 2rem" />
-                        <Column field="ComponenteGestion" header="Componente Gestión" sortable style="min-width: 2rem" />
-                        <Column field="ComponenteReposicion" header="Componente Reposición" sortable style="min-width: 2rem" />
-                        <Column field="ComponenteReposicionBruto" header="Componente Reposición Bruto" sortable style="min-width: 2rem" />
-                        <Column field="ate_Fissal" header="Fissal" sortable style="min-width: 2rem" />
-                        <Column field="ate_FissalDiag" header="Fissal Diagnóstico" sortable style="min-width: 2rem" />
-                        <Column field="ate_FissalValorBruto" header="Fissal Valor Bruto" sortable style="min-width: 2rem" />
-                        <Column field="ate_fissalvalorbrutoserv" header="Fissal Valor Bruto Serv" sortable style="min-width: 2rem" />
-                        <Column field="ate_fissalvalorbrutomed" header="Fissal Valor Bruto Med" sortable style="min-width: 2rem" />
-                        <Column field="ate_fissalvalorbrutoins" header="Fissal Valor Bruto Ins" sortable style="min-width: 2rem" />
-                        <Column field="ate_fissalvalorbrutoapo" header="Fissal Valor Bruto Apo" sortable style="min-width: 2rem" />
-                        <Column field="ate_FissalValorNeto" header="Fissal Valor Neto" sortable style="min-width: 2rem" />
-                        <Column field="ate_FissalValorServ" header="Fissal Valor Serv" sortable style="min-width: 2rem" />
-                        <Column field="ate_FissalValorNetoMed" header="Fissal Valor Neto Med" sortable style="min-width: 2rem" />
-                        <Column field="ate_FissalValorNetoIns" header="Fissal Valor Neto Ins" sortable style="min-width: 2rem" />
-                        <Column field="ate_FissalValorNetoApo" header="Fissal Valor Neto Apo" sortable style="min-width: 2rem" />
-                        <Column field="ate_FissalValorConsumo" header="Fissal Valor Consumo" sortable style="min-width: 2rem" />
-                        <Column field="ate_esESSALUD" header="Es ESSALUD" sortable style="min-width: 2rem" />
-                        <Column field="ate_esESSALUD_Documento" header="ESSALUD Documento" sortable style="min-width: 2rem" />
-                        <Column field="ate_esESSALUD_FecAct" header="ESSALUD Fecha Act" sortable style="min-width: 2rem" />
-                        <Column field="ate_FinalidadAjuste" header="Finalidad Ajuste" sortable style="min-width: 2rem" />
-                        <Column field="ate_AfiIdTablaGO" header="Afi Id Tabla GO" sortable style="min-width: 2rem" />
-                        <Column field="ate_AfiIdNumRegGO" header="Afi Id Num Reg GO" sortable style="min-width: 2rem" />
-                        <Column field="ate_fissalConvenio" header="Fissal Convenio" sortable style="min-width: 2rem" />
-                        <Column field="ate_Finalidad2012" header="Finalidad 2012" sortable style="min-width: 2rem" />
-                        <Column field="ate_Finalidad2012_Ant" header="Finalidad 2012 Ant" sortable style="min-width: 2rem" />
-                        <Column field="SubPrograma_Funcional_Ant" header="SubPrograma Funcional Ant" sortable style="min-width: 2rem" />
-                        <Column field="Programa_PPTAL_Ant" header="Programa PPTAL Ant" sortable style="min-width: 2rem" />
-                        <Column field="Producto_Proyecto_Ant" header="Producto Proyecto Ant" sortable style="min-width: 2rem" />
-                        <Column field="Activ_Obra_Accinv_Ant" header="Activ Obra Accinv Ant" sortable style="min-width: 2rem" />
-                        <Column field="Nivel_Ant" header="Nivel Ant" sortable style="min-width: 2rem" />
-                        <Column field="ate_estado_observacion_psa" header="Estado Observación PSA" sortable style="min-width: 2rem" />
-                        <Column field="ate_ue" header="UE" sortable style="min-width: 2rem" />
-                        <Column field="ate_capita2013" header="Capita 2013" sortable style="min-width: 2rem" />
-                        <Column field="ate_capita_grep" header="Capita GREP" sortable style="min-width: 2rem" />
-                        <Column field="ate_idgrupo" header="ID Grupo" sortable style="min-width: 2rem" />
-                        <Column field="ate_idfinanciamiento" header="ID Financiamiento" sortable style="min-width: 2rem" />
-                        <Column field="ate_grupopoblacional" header="Grupo Poblacional" sortable style="min-width: 2rem" />
-                        <Column field="FechaReporte_ate" header="Fecha Reporte" sortable style="min-width: 2rem" />
-                        <Column field="ate_fecinghosp" header="Fecha Ingreso Hosp" sortable style="min-width: 2rem" />
-                        <Column field="ate_fecaltahosp" header="Fecha Alta Hosp" sortable style="min-width: 2rem" />
-                        <Column field="ate_historiaclinica" header="Historia Clínica" sortable style="min-width: 2rem" />
-                        <Column field="afiins_tabla" header="Afiins Tabla" sortable style="min-width: 2rem" />
-                        <Column field="afiins_tabla_id" header="Afiins Tabla ID" sortable style="min-width: 2rem" />
-                        <Column field="ASEG_C_RENIECVALIDA" header="RENIEC Válida" sortable style="min-width: 2rem" />
-                        <Column field="ASEG_D_RENIECFECACT" header="RENIEC Fecha Act" sortable style="min-width: 2rem" />
-                        <Column field="ASEG_V_UBIGEORESID" header="Ubig" sortable style="min-width: 2rem" />
-                        <Column field="ASEG_V_IDEESSADSCRIP" header="EESS Adscrip." sortable style="min-width: 2rem" />
-                        <Column field="ASEG_V_ESGRUPOFOCSISFOH" header="Grupo FOCSISFOH" sortable style="min-width: 2rem" />
-                        <Column field="ASEG_V_NROCONTRATO" header="Nro Contrato" sortable style="min-width: 2rem" />
-                        <Column field="ASEG_C_ESTADO" header="Estado" sortable style="min-width: 2rem" />
-                        <Column field="ASEG_V_TIPODOCUMENTO" header="Tipo Doc." sortable style="min-width: 2rem" />
-                        <Column field="ASEG_V_NRODOCUMENTO" header="Nro Doc." sortable style="min-width: 2rem" />
-                        <Column field="Complementario_TieneProcServ" header="Tiene Proc. Serv." sortable style="min-width: 2rem" />
-                        <Column field="Complementario_CantProcServ" header="Cant. Proc. Serv." sortable style="min-width: 2rem" />
-                        <Column field="Complementario_ValorBrutoFinal" header="Valor Bruto Final" sortable style="min-width: 2rem" />
-                        <Column field="Complementario_ValorBrutoRRHH" header="Valor Bruto RRHH" sortable style="min-width: 2rem" />
-                        <Column field="Complementario_ValorNetoFinal" header="Valor Neto Final" sortable style="min-width: 2rem" />
-                        <Column field="Complementario_ValorNetoRRHH" header="Valor Neto RRHH" sortable style="min-width: 2rem" />
-                        <Column field="ate_plan_sonreir" header="Plan Sonreír" sortable style="min-width: 2rem" />
-                        <Column field="ate_codinstitucion" header="Cod. Institución" sortable style="min-width: 2rem" />
-                        <Column field="Ate_esMuestraPriorizada" header="Muestra Priorizada" sortable style="min-width: 2rem" />
-                        <Column field="ATE_IDTIPCONVENIO" header="ID Tipo Convenio" sortable style="min-width: 2rem" />
+                        <Column field="ate_coddiag1" header="ate_coddiag1" sortable style="min-width: 2rem" />
+                        <Column field="ate_dni" header="ate_dni" sortable style="min-width: 2rem" />
+                        <Column field="region" header="region" sortable style="min-width: 2rem" />
+                        <Column field="ComponenteGestion" header="ComponenteGestion" sortable style="min-width: 2rem" />
+                        <Column field="ComponenteReposicion" header="ComponenteReposicion" sortable style="min-width: 2rem" />
+                        <Column field="ComponenteReposicionBruto" header="ComponenteReposicionBruto" sortable style="min-width: 2rem" />
+                        <Column field="ate_Fissal" header="ate_Fissal" sortable style="min-width: 2rem" />
+                        <Column field="ate_FissalDiag" header="ate_FissalDiag" sortable style="min-width: 2rem" />
+                        <Column field="ate_FissalValorBruto" header="ate_FissalValorBruto" sortable style="min-width: 2rem" />
+                        <Column field="ate_fissalvalorbrutoserv" header="ate_fissalvalorbrutoserv" sortable style="min-width: 2rem" />
+                        <Column field="ate_fissalvalorbrutomed" header="ate_fissalvalorbrutomed" sortable style="min-width: 2rem" />
+                        <Column field="ate_fissalvalorbrutoins" header="ate_fissalvalorbrutoins" sortable style="min-width: 2rem" />
+                        <Column field="ate_fissalvalorbrutoapo" header="ate_fissalvalorbrutoapo" sortable style="min-width: 2rem" />
+                        <Column field="ate_FissalValorNeto" header="ate_FissalValorNeto" sortable style="min-width: 2rem" />
+                        <Column field="ate_FissalValorServ" header="ate_FissalValorServ" sortable style="min-width: 2rem" />
+                        <Column field="ate_FissalValorNetoMed" header="ate_FissalValorNetoMed" sortable style="min-width: 2rem" />
+                        <Column field="ate_FissalValorNetoIns" header="ate_FissalValorNetoIns" sortable style="min-width: 2rem" />
+                        <Column field="ate_FissalValorNetoApo" header="ate_FissalValorNetoApo" sortable style="min-width: 2rem" />
+                        <Column field="ate_FissalValorConsumo" header="ate_FissalValorConsumo" sortable style="min-width: 2rem" />
+                        <Column field="ate_esESSALUD" header="ate_esESSALUD" sortable style="min-width: 2rem" />
+                        <Column field="ate_esESSALUD_Documento" header="ate_esESSALUD_Documento" sortable style="min-width: 2rem" />
+                        <Column field="ate_esESSALUD_FecAct" header="ate_esESSALUD_FecAct" sortable style="min-width: 2rem" />
+                        <Column field="ate_FinalidadAjuste" header="ate_FinalidadAjuste" sortable style="min-width: 2rem" />
+                        <Column field="ate_AfiIdTablaGO" header="ate_AfiIdTablaGO" sortable style="min-width: 2rem" />
+                        <Column field="ate_AfiIdNumRegGO" header="ate_AfiIdNumRegGO" sortable style="min-width: 2rem" />
+                        <Column field="ate_fissalConvenio" header="ate_fissalConvenio" sortable style="min-width: 2rem" />
+                        <Column field="ate_Finalidad2012" header="ate_Finalidad2012" sortable style="min-width: 2rem" />
+                        <Column field="ate_Finalidad2012_Ant" header="ate_Finalidad2012_Ant" sortable style="min-width: 2rem" />
+                        <Column field="SubPrograma_Funcional_Ant" header="SubPrograma_Funcional_Ant" sortable style="min-width: 2rem" />
+                        <Column field="Programa_PPTAL_Ant" header="Programa_PPTAL_Ant" sortable style="min-width: 2rem" />
+                        <Column field="Producto_Proyecto_Ant" header="Producto_Proyecto_Ant" sortable style="min-width: 2rem" />
+                        <Column field="Activ_Obra_Accinv_Ant" header="Activ_Obra_Accinv_Ant" sortable style="min-width: 2rem" />
+                        <Column field="Nivel_Ant" header="Nivel_Ant" sortable style="min-width: 2rem" />
+                        <Column field="ate_estado_observacion_psa" header="ate_estado_observacion_psa" sortable style="min-width: 2rem" />
+                        <Column field="ate_ue" header="ate_ue" sortable style="min-width: 2rem" />
+                        <Column field="ate_capita2013" header="ate_capita2013" sortable style="min-width: 2rem" />
+                        <Column field="ate_capita_grep" header="ate_capita_grep" sortable style="min-width: 2rem" />
+                        <Column field="ate_idgrupo" header="ate_idgrupo" sortable style="min-width: 2rem" />
+                        <Column field="ate_idfinanciamiento" header="ate_idfinanciamiento" sortable style="min-width: 2rem" />
+                        <Column field="ate_grupopoblacional" header="ate_grupopoblacional" sortable style="min-width: 2rem" />
+                        <Column field="FechaReporte_ate" header="FechaReporte_ate" sortable style="min-width: 2rem" />
+                        <Column field="ate_fecinghosp" header="ate_fecinghosp" sortable style="min-width: 2rem" />
+                        <Column field="ate_fecaltahosp" header="ate_fecaltahosp" sortable style="min-width: 2rem" />
+                        <Column field="ate_historiaclinica" header="ate_historiaclinica" sortable style="min-width: 2rem" />
+                        <Column field="afiins_tabla" header="afiins_tabla" sortable style="min-width: 2rem" />
+                        <Column field="afiins_tabla_id" header="afiins_tabla_id" sortable style="min-width: 2rem" />
+                        <Column field="ASEG_C_RENIECVALIDA" header="ASEG_C_RENIECVALIDA" sortable style="min-width: 2rem" />
+                        <Column field="ASEG_D_RENIECFECACT" header="ASEG_D_RENIECFECACT" sortable style="min-width: 2rem" />
+                        <Column field="ASEG_V_UBIGEORESID" header="ASEG_V_UBIGEORESID" sortable style="min-width: 2rem" />
+                        <Column field="ASEG_V_IDEESSADSCRIP" header="ASEG_V_IDEESSADSCRIP" sortable style="min-width: 2rem" />
+                        <Column field="ASEG_V_ESGRUPOFOCSISFOH" header="ASEG_V_ESGRUPOFOCSISFOH" sortable style="min-width: 2rem" />
+                        <Column field="ASEG_V_NROCONTRATO" header="ASEG_V_NROCONTRATO" sortable style="min-width: 2rem" />
+                        <Column field="ASEG_C_ESTADO" header="ASEG_C_ESTADO" sortable style="min-width: 2rem" />
+                        <Column field="ASEG_V_TIPODOCUMENTO" header="ASEG_V_TIPODOCUMENTO" sortable style="min-width: 2rem" />
+                        <Column field="ASEG_V_NRODOCUMENTO" header="ASEG_V_NRODOCUMENTO" sortable style="min-width: 2rem" />
+                        <Column field="Complementario_TieneProcServ" header="Complementario_TieneProcServ" sortable style="min-width: 2rem" />
+                        <Column field="Complementario_CantProcServ" header="Complementario_CantProcServ" sortable style="min-width: 2rem" />
+                        <Column field="Complementario_ValorBrutoFinal" header="Complementario_ValorBrutoFinal" sortable style="min-width: 2rem" />
+                        <Column field="Complementario_ValorBrutoRRHH" header="Complementario_ValorBrutoRRHH" sortable style="min-width: 2rem" />
+                        <Column field="Complementario_ValorNetoFinal" header="Complementario_ValorNetoFinal" sortable style="min-width: 2rem" />
+                        <Column field="Complementario_ValorNetoRRHH" header="Complementario_ValorNetoRRHH" sortable style="min-width: 2rem" />
+                        <Column field="ate_plan_sonreir" header="ate_plan_sonreir" sortable style="min-width: 2rem" />
+                        <Column field="ate_codinstitucion" header="ate_codinstitucion" sortable style="min-width: 2rem" />
+                        <Column field="Ate_esMuestraPriorizada" header="Ate_esMuestraPriorizada" sortable style="min-width: 2rem" />
+                        <Column field="ATE_IDTIPCONVENIO" header="ATE_IDTIPCONVENIO" sortable style="min-width: 2rem" />
                         <Column field="Convenio" header="Convenio" sortable style="min-width: 2rem" />
-                        <Column field="ValorBruto_SIS" header="Valor Bruto SIS" sortable style="min-width: 2rem" />
-                        <Column field="ValorBrutoSer_SIS" header="Valor Bruto Ser. SIS" sortable style="min-width: 2rem" />
-                        <Column field="ValorBrutoMed_SIS" header="Valor Bruto Med. SIS" sortable style="min-width: 2rem" />
-                        <Column field="ValorBrutoIns_SIS" header="Valor Bruto Ins. SIS" sortable style="min-width: 2rem" />
-                        <Column field="ValorBrutoApo_SIS" header="Valor Bruto Apo. SIS" sortable style="min-width: 2rem" />
-                        <Column field="ValorNeto_SIS" header="Valor Neto SIS" sortable style="min-width: 2rem" />
-                        <Column field="ValorNetoSer_SIS" header="Valor Neto Ser. SIS" sortable style="min-width: 2rem" />
-                        <Column field="ValorNetoMed_SIS" header="Valor Neto Med. SIS" sortable style="min-width: 2rem" />
-                        <Column field="ValorNetoIns_SIS" header="Valor Neto Ins. SIS" sortable style="min-width: 2rem" />
-                        <Column field="ValorNetoApo_SIS" header="Valor Neto Apo. SIS" sortable style="min-width: 2rem" />
-                        <Column field="ATE_VALORNETO_SME" header="Valor Neto SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_VALORNETOSER_SME" header="Valor Neto Ser. SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_VALORNETOINS_SME" header="Valor Neto Ins. SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_VALORNETOMED_SME" header="Valor Neto Med. SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_VALORNETOPRO_SME" header="Valor Neto Pro. SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_FISSALVALORNETO_SME" header="FISSAL Valor Neto SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_FISSALVALORNETOAPO_SME" header="FISSAL Valor Neto Apo. SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_FISSALVALORNETOINS_SME" header="FISSAL Valor Neto Ins. SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_FISSALVALORNETOMED_SME" header="FISSAL Valor Neto Med. SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_FISSALVALORSERV_SME" header="FISSAL Valor Ser. SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_SIS_NETO_SME" header="SIS Neto SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_SISPRO_NETO_SME" header="SIS Pro. Neto SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_SISSER_NETO_SME" header="SIS Ser. Neto SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_SISINS_NETO_SME" header="SIS Ins. Neto SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_SISMED_NETO_SME" header="SIS Med. Neto SME" sortable style="min-width: 2rem" />
-                        <Column field="ATE_PLAN" header="Plan" sortable style="min-width: 2rem" />
-                        <Column field="ATE_V_TIPOSEGURO" header="Tipo Seguro" sortable style="min-width: 2rem" />
-                        <Column field="ATE_ESNUEVOFORMATO" header="Es Nuevo Formato" sortable style="min-width: 2rem" />
-                        <Column field="ATE_RENIPRESS" header="RENIPRESS" sortable style="min-width: 2rem" />
-                        <Column field="Fuente_Financiamiento" header="Fuente Financiamiento" sortable style="min-width: 2rem" />
-                        <Column field="ATE_IDMECANISMOPAGO" header="ID Mecanismo Pago" sortable style="min-width: 2rem" />
-                        <Column field="Mecanismo_Pago" header="Mecanismo Pago" sortable style="min-width: 2rem" />
-                        <Column field="ATE_NIVEL_VALORIZACION" header="Nivel Valorización" sortable style="min-width: 2rem" />
+                        <Column field="ValorBruto_SIS" header="ValorBruto_SIS" sortable style="min-width: 2rem" />
+                        <Column field="ValorBrutoSer_SIS" header="ValorBrutoSer_SIS" sortable style="min-width: 2rem" />
+                        <Column field="ValorBrutoMed_SIS" header="ValorBrutoMed_SIS" sortable style="min-width: 2rem" />
+                        <Column field="ValorBrutoIns_SIS" header="ValorBrutoIns_SIS" sortable style="min-width: 2rem" />
+                        <Column field="ValorBrutoApo_SIS" header="ValorBrutoApo_SIS" sortable style="min-width: 2rem" />
+                        <Column field="ValorNeto_SIS" header="ValorNeto_SIS" sortable style="min-width: 2rem" />
+                        <Column field="ValorNetoSer_SIS" header="ValorNetoSer_SIS" sortable style="min-width: 2rem" />
+                        <Column field="ValorNetoMed_SIS" header="ValorNetoMed_SIS" sortable style="min-width: 2rem" />
+                        <Column field="ValorNetoIns_SIS" header="ValorNetoIns_SIS" sortable style="min-width: 2rem" />
+                        <Column field="ValorNetoApo_SIS" header="ValorNetoApo_SIS" sortable style="min-width: 2rem" />
+                        <Column field="ATE_VALORNETO_SME" header="ATE_VALORNETO_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_VALORNETOSER_SME" header="ATE_VALORNETOSER_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_VALORNETOINS_SME" header="ATE_VALORNETOINS_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_VALORNETOMED_SME" header="ATE_VALORNETOMED_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_VALORNETOPRO_SME" header="ATE_VALORNETOPRO_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_FISSALVALORNETO_SME" header="ATE_FISSALVALORNETO_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_FISSALVALORNETOAPO_SME" header="ATE_FISSALVALORNETOAPO_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_FISSALVALORNETOINS_SME" header="ATE_FISSALVALORNETOINS_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_FISSALVALORNETOMED_SME" header="ATE_FISSALVALORNETOMED_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_FISSALVALORSERV_SME" header="ATE_FISSALVALORSERV_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_SIS_NETO_SME" header="ATE_SIS_NETO_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_SISPRO_NETO_SME" header="ATE_SISPRO_NETO_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_SISSER_NETO_SME" header="ATE_SISSER_NETO_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_SISINS_NETO_SME" header="ATE_SISINS_NETO_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_SISMED_NETO_SME" header="ATE_SISMED_NETO_SME" sortable style="min-width: 2rem" />
+                        <Column field="ATE_PLAN" header="ATE_PLAN" sortable style="min-width: 2rem" />
+                        <Column field="ATE_V_TIPOSEGURO" header="ATE_V_TIPOSEGURO" sortable style="min-width: 2rem" />
+                        <Column field="ATE_ESNUEVOFORMATO" header="ATE_ESNUEVOFORMATO" sortable style="min-width: 2rem" />
+                        <Column field="ATE_RENIPRESS" header="ATE_RENIPRESS" sortable style="min-width: 2rem" />
+                        <Column field="Fuente_Financiamiento" header="Fuente_Financiamiento" sortable style="min-width: 2rem" />
+                        <Column field="ATE_IDMECANISMOPAGO" header="ATE_IDMECANISMOPAGO" sortable style="min-width: 2rem" />
+                        <Column field="Mecanismo_Pago" header="Mecanismo_Pago" sortable style="min-width: 2rem" />
+                        <Column field="ATE_NIVEL_VALORIZACION" header="ATE_NIVEL_VALORIZACION" sortable style="min-width: 2rem" />
 
                         <!-- Nueva columna con ícono para ver detalle -->
                         <Column class="min-w-[1rem]">
                             <template #body="slotProps">
                                 <i class="pi pi-eye text-blue-500 cursor-pointer"
-                                    :title="'Detalle para ' + slotProps.data.Periodo"
+                                    :title="'med ' + slotProps.data.Periodo"
                                     @click="verDetalle(slotProps.data.ate_idnumreg)"></i>
+                            </template>
+                        </Column>
+                        <Column class="min-w-[1rem]">
+                            <template #body="slotProps">
+                                <i class="pi pi-eye text-red-700 cursor-pointer"
+                                    :title="'ins ' + slotProps.data.Periodo"
+                                    @click="verDetalle1(slotProps.data.ate_idnumreg)"></i>
+                            </template>
+                        </Column>
+                        <Column class="min-w-[1rem]">
+                            <template #body="slotProps">
+                                <i class="pi pi-eye text-indigo-600 cursor-pointer"
+                                    :title="'Ser ' + slotProps.data.Periodo"
+                                    @click="verDetalle2(slotProps.data.ate_idnumreg)"></i>
                             </template>
                         </Column>
                     </DataTable>
@@ -274,6 +288,87 @@
                 <Column field="ESTADO_OBSERVACION_SME" header="ESTADO_OBSERVACION_SME" />
                 <Column field="CANTIDADAPROBADA_SME" header="CANTIDADAPROBADA_SME" />
                 <Column field="PRECIO_NETO_SME" header="PRECIO_NETO_SME" />
+            </DataTable>
+        </Dialog>
+        
+        <!-- Spinner global -->
+        <div v-if="loadingDetail" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+            <ProgressSpinner />
+        </div>
+        <!-- Diálogo para mostrar los detalles del registro -->
+        <Dialog v-model:visible="dialogVisible1" maximizable modal header="i_atencioncierre_consumosins"
+            :style="{ width: '50rem' }" :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
+            :contentStyle="{ position: 'relative' }">
+            <DataTable ref="dt" v-model:selection="selectedProducts" :value="detalleData" dataKey="id" :paginator="true"
+                :rows="5" :filters="filters"
+                paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
+                :rowsPerPageOptions="[5, 10, 25]"
+                currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} Detalle">
+                <template #header>
+                </template>
+                <!-- Tabla con los datos cargados -->
+                <Column field="TIPOCONSUMO" header="TIPOCONSUMO" />
+                <Column field="IDNUMREG" header="IDNUMREG" />
+                <Column field="IDNUMREGATE" header="IDNUMREGATE" />
+                <Column field="CODIGO" header="CODIGO" />
+                <Column field="CANTIDAD" header="CANTIDAD" />
+                <Column field="CANTIDADAPROBADA" header="CANTIDADAPROBADA" />
+                <Column field="PRECIOAPLICADO" header="PRECIOAPLICADO" />
+                <Column field="PRECIO_NETO" header="PRECIO_NETO" />
+                <Column field="TIPOPRECIO" header="TIPOPRECIO" />
+                <Column field="PRECIOAPLICADO_REPOS" header="PRECIOAPLICADO_REPOS" />
+                <Column field="NUMREGPRA_REPOS" header="NUMREGPRA_REPOS" />
+                <Column field="TIPOPRECIO_REPOS" header="TIPOPRECIO_REPOS" />
+                <Column field="ESFISSAL" header="ESFISSAL" />
+                <Column field="TIPOPRECIO_ANT" header="TIPOPRECIO_ANT" />
+                <Column field="TIPO_PAGO" header="TIPO_PAGO" />
+                <Column field="ESTADO_OBSERVACION" header="ESTADO_OBSERVACION" />
+                <Column field="ATE_UE" header="ATE_UE" />
+                <Column field="MESPROD_CONSUMO" header="MESPROD_CONSUMO" />
+                <Column field="NRODIA" header="NRODIA" />
+                <Column field="PRECIO_BRUTO" header="PRECIO_BRUTO" />
+                <Column field="ESTADO_OBSERVACION_SME" header="ESTADO_OBSERVACION_SME" />
+                <Column field="CANTIDADAPROBADA_SME" header="CANTIDADAPROBADA_SME" />
+                <Column field="PRECIO_NETO_SME" header="PRECIO_NETO_SME" />
+            </DataTable>
+        </Dialog>
+
+        <!-- Spinner global -->
+        <div v-if="loadingDetail" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+            <ProgressSpinner />
+        </div>
+        <!-- Diálogo para mostrar los detalles del registro -->
+        <Dialog v-model:visible="dialogVisible2" maximizable modal header="i_atencioncierre_consumosser"
+            :style="{ width: '50rem' }" :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
+            :contentStyle="{ position: 'relative' }">
+            <DataTable ref="dt" v-model:selection="selectedProducts" :value="detalleData" dataKey="id" :paginator="true"
+                :rows="5" :filters="filters"
+                paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
+                :rowsPerPageOptions="[5, 10, 25]"
+                currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} Detalle">
+                <template #header>
+                </template>
+                <!-- Tabla con los datos cargados -->
+                <Column field="IDNUMREG" header="IDNUMREG" />
+                <Column field="IDNUMREGATE" header="IDNUMREGATE" />
+                <Column field="ASER_IDSERVICIO" header="ASER_IDSERVICIO" />
+                <Column field="PRECIOUNIT_SERV" header="PRECIOUNIT_SERV" />
+                <Column field="ASER_TIPO_PAGO" header="ASER_TIPO_PAGO" />
+                <Column field="ASER_FISSAL" header="ASER_FISSAL" />
+                <Column field="ASER_FINALIDAD" header="ASER_FINALIDAD" />
+                <Column field="ASER_CAPITA" header="ASER_CAPITA" />
+                <Column field="ASER_IDFINANCIAMIENTO" header="ASER_IDFINANCIAMIENTO" />
+                <Column field="ASER_IDTARIFA" header="ASER_IDTARIFA" />
+                <Column field="ASER_IDSERVICIO_P" header="ASER_IDSERVICIO_P" />
+                <Column field="ASER_FISSAL_P" header="ASER_FISSAL_P" />
+                <Column field="ASER_CAPITA_P" header="ASER_CAPITA_P" />
+                <Column field="ASER_VALAORSERV_P" header="ASER_VALAORSERV_P" />
+                <Column field="ASER_FISSALVALORSERV_P" header="ASER_FISSALVALORSERV_P" />
+                <Column field="ASER_TIPO_PAGO_P" header="ASER_TIPO_PAGO_P" />
+                <Column field="ASER_IDTARIFA_P" header="ASER_IDTARIFA_P" />
+                <Column field="ASER_IDFINANCIAMIENTO_P" header="ASER_IDFINANCIAMIENTO_P" />
+                <Column field="VALOR_NETO" header="VALOR_NETO" />
+                <Column field="MESPROD_CONSUMO" header="MESPROD_CONSUMO" />
             </DataTable>
         </Dialog>
 
@@ -371,6 +466,9 @@
         }
     ];
     const dialogVisible = ref(false);
+    const dialogVisible1 = ref(false);
+    const dialogVisible2 = ref(false);
+
     const selectedRecord = ref(null);
     const detalleData = ref([]);
     const fetchData = async (page = 1) => {
@@ -421,6 +519,41 @@
             dialogVisible.value = true;
         }
     };
+    
+    const verDetalle1 = async (id) => {
+        loadingDetail.value = true;
+        dialogVisible1.value = false;
+        try {
+            const response = await axios.get(`/atencion-cierre-consumosins/${id}`);
+            if (response.data && response.data.data) {
+                detalleData.value = response.data.data;
+            }
+        } catch (err) {
+            console.error('Error al obtener los detalles:', err);
+            detalleData.value = [];
+        } finally {
+            loadingDetail.value = false;
+            dialogVisible1.value = true;
+        }
+    };
+
+    const verDetalle2 = async (id) => {
+        loadingDetail.value = true;
+        dialogVisible2.value = false;
+        try {
+            const response = await axios.get(`/atencion-cierre-consumoses/${id}`);
+            if (response.data && response.data.data) {
+                detalleData.value = response.data.data;
+            }
+        } catch (err) {
+            console.error('Error al obtener los detalles:', err);
+            detalleData.value = [];
+        } finally {
+            loadingDetail.value = false;
+            dialogVisible2.value = true;
+        }
+    };
+
     watch([periodo, mes, ejecutora, () => filters.value ?.global ?.value], () => fetchData(1), {
         immediate: true
     });

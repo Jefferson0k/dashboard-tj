@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Api\ConsumoInsController;
+use App\Http\Controllers\Api\ConsumoSerController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -25,7 +27,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/fraccionventas', [FraccionVentaController::class, 'index'])->name('fraccionventas');
     Route::get('/atencion-cierre-consumosmed/{idnumregate}', [FraccionVentaController::class, 'show']);
-
+    Route::get('/atencion-cierre-consumosins/{idnumregate}', [ConsumoInsController::class, 'show']);
+    Route::get('/atencion-cierre-consumoses/{idnumregate}', [ConsumoSerController::class, 'show']);
 });
 
 require __DIR__.'/auth.php';
