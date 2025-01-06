@@ -42,10 +42,10 @@
                         scrollHeight="400px" 
                         :filters="filters"
                         filterDisplay="menu"
-                        :globalFilterFields="['ate_dnipersonalsalud','ate_dni','nombre_completo', 'nombres', 'Observado_SME', 'CodigoEESS', 'destino', 'ValorNeto', 'valorNetoServ', 'ValorBruto', 'NuevoOjo', 'Periodo', 'Mes', 'Observado_PSA', 'Observado_SME', 'Disa', 'CodigoEESS', 'Ejecutora', 'Categoria', 'Servicio', 'ServicioDesc', 'ate_codate', 'ate_coddestino', 'destino', 'ValorNeto', 'valorNetoServ', 'valorNetoMedi', 'valorNetoProc', 'valorNetoInsu', 'ValorBruto', 'valorBrutoServ', 'valorbrutoMedi', 'valorbrutopro', 'valorbrutoins', 'ate_idlugar', 'Capita', 'Componente', 'Finalidad', 'RM', 'ParaEstadistica', 'TipoPago', 'ModalidadAtencion', 'FUA', 'Contrato', 'ate_idnumreg', 'ate_tipdig', 'ate_odsis', 'ate_idppdd', 'ate_odsisrecep', 'ate_pdigrecep', 'ate_estado', 'ate_aus', 'ate_disa', 'ate_lote', 'ate_numregate', 'ate_autogenerado', 'ate_edad', 'ate_fecatencion', 'ate_appat', 'ate_apmat', 'ate_pnom', 'ate_snom', 'ate_fecnac', 'ate_idsexo', 'FechaCreacion', 'ate_esgestante', 'ate_fecparto', 'ate_ideessrefirio', 'ate_nrohojareferencia', 'ate_ideesscontrarefiere', 'ate_numhojacontrarefiere', 'ate_idorigenpersonal', 'ate_tipodocpersonalsalud', 'ate_dnipersonalsalud', 'pes_colegiatura', 'ate_especialidad', 'ate_tipo_personal_salud', 'SubPrograma_Funcional', 'Programa_PPTAL', 'Producto_Proyecto', 'Activ_Obra_Accinv', 'Nivel', 'ate_coddiag1', 'ate_dni', 'region', 'ComponenteGestion', 'ComponenteReposicion', 'ComponenteReposicionBruto', 'ate_Fissal', 'ate_FissalDiag', 'ate_FissalValorBruto', 'ate_fissalvalorbrutoserv', 'ate_fissalvalorbrutomed', 'ate_fissalvalorbrutoins', 'ate_fissalvalorbrutoapo', 'ate_FissalValorNeto', 'ate_FissalValorServ', 'ate_FissalValorNetoMed', 'ate_FissalValorNetoIns', 'ate_FissalValorNetoApo', 'ate_FissalValorConsumo', 'ate_esESSALUD', 'ate_esESSALUD_Documento', 'ate_esESSALUD_FecAct', 'ate_FinalidadAjuste', 'ate_AfiIdTablaGO', 'ate_AfiIdNumRegGO', 'ate_fissalConvenio', 'ate_Finalidad2012', 'ate_Finalidad2012_Ant', 'SubPrograma_Funcional_Ant', 'Programa_PPTAL_Ant', 'Producto_Proyecto_Ant', 'Activ_Obra_Accinv_Ant', 'Nivel_Ant', 'ate_estado_observacion_psa', 'ate_ue', 'ate_capita2013', 'ate_capita_grep', 'ate_idgrupo', 'ate_idfinanciamiento', 'ate_grupopoblacional', 'FechaReporte_ate', 'ate_fecinghosp', 'ate_fecaltahosp', 'ate_historiaclinica', 'afiins_tabla', 'afiins_tabla_id', 'ASEG_C_RENIECVALIDA', 'ASEG_D_RENIECFECACT', 'ASEG_V_UBIGEORESID', 'ASEG_V_IDEESSADSCRIP', 'ASEG_V_ESGRUPOFOCSISFOH', 'ASEG_V_NROCONTRATO', 'ASEG_C_ESTADO', 'ASEG_V_TIPODOCUMENTO', 'ASEG_V_NRODOCUMENTO', 'Complementario_TieneProcServ', 'Complementario_CantProcServ', 'Complementario_ValorBrutoFinal', 'Complementario_ValorBrutoRRHH', 'Complementario_ValorNetoFinal', 'Complementario_ValorNetoRRHH', 'ate_plan_sonreir', 'ate_codinstitucion', 'Ate_esMuestraPriorizada', 'ATE_IDTIPCONVENIO', 'Convenio', 'ValorBruto_SIS', 'ValorBrutoSer_SIS', 'ValorBrutoMed_SIS', 'ValorBrutoIns_SIS', 'ValorBrutoApo_SIS', 'ValorNeto_SIS', 'ValorNetoSer_SIS', 'ValorNetoMed_SIS', 'ValorNetoIns_SIS', 'ValorNetoApo_SIS', 'ATE_VALORNETO_SME', 'ATE_VALORNETOSER_SME', 'ATE_VALORNETOINS_SME', 'ATE_VALORNETOMED_SME', 'ATE_VALORNETOPRO_SME', 'ATE_FISSALVALORNETO_SME', 'ATE_FISSALVALORNETOAPO_SME', 'ATE_FISSALVALORNETOINS_SME', 'ATE_FISSALVALORNETOMED_SME', 'ATE_FISSALVALORSERV_SME', 'ATE_SIS_NETO_SME', 'ATE_SISPRO_NETO_SME', 'ATE_SISSER_NETO_SME', 'ATE_SISINS_NETO_SME', 'ATE_SISMED_NETO_SME', 'ATE_PLAN', 'ATE_V_TIPOSEGURO', 'ATE_ESNUEVOFORMATO', 'ATE_RENIPRESS', 'Fuente_Financiamiento', 'ATE_IDMECANISMOPAGO', 'Mecanismo_Pago', 'ATE_NIVEL_VALORIZACION']">
+                        :globalFilterFields="['Observado_SME', 'CodigoEESS', 'destino', 'ValorNeto', 'valorNetoServ', 'ValorBruto', 'NuevoOjo', 'Periodo', 'Mes', 'Observado_PSA', 'Observado_SME', 'Disa', 'CodigoEESS', 'Ejecutora', 'Categoria', 'Servicio', 'ServicioDesc', 'ate_codate', 'ate_coddestino', 'destino', 'ValorNeto', 'valorNetoServ', 'valorNetoMedi', 'valorNetoProc', 'valorNetoInsu', 'ValorBruto', 'valorBrutoServ', 'valorbrutoMedi', 'valorbrutopro', 'valorbrutoins', 'ate_idlugar', 'Capita', 'Componente', 'Finalidad', 'RM', 'ParaEstadistica', 'TipoPago', 'ModalidadAtencion', 'FUA', 'Contrato', 'ate_idnumreg', 'ate_tipdig', 'ate_odsis', 'ate_idppdd', 'ate_odsisrecep', 'ate_pdigrecep', 'ate_estado', 'ate_aus', 'ate_disa', 'ate_lote', 'ate_numregate', 'ate_autogenerado', 'ate_edad', 'ate_fecatencion', 'ate_appat', 'ate_apmat', 'ate_pnom', 'ate_snom', 'ate_fecnac', 'ate_idsexo', 'FechaCreacion', 'ate_esgestante', 'ate_fecparto', 'ate_ideessrefirio', 'ate_nrohojareferencia', 'ate_ideesscontrarefiere', 'ate_numhojacontrarefiere', 'ate_idorigenpersonal', 'ate_tipodocpersonalsalud', 'ate_dnipersonalsalud', 'pes_colegiatura', 'ate_especialidad', 'ate_tipo_personal_salud', 'SubPrograma_Funcional', 'Programa_PPTAL', 'Producto_Proyecto', 'Activ_Obra_Accinv', 'Nivel', 'ate_coddiag1', 'ate_dni', 'region', 'ComponenteGestion', 'ComponenteReposicion', 'ComponenteReposicionBruto', 'ate_Fissal', 'ate_FissalDiag', 'ate_FissalValorBruto', 'ate_fissalvalorbrutoserv', 'ate_fissalvalorbrutomed', 'ate_fissalvalorbrutoins', 'ate_fissalvalorbrutoapo', 'ate_FissalValorNeto', 'ate_FissalValorServ', 'ate_FissalValorNetoMed', 'ate_FissalValorNetoIns', 'ate_FissalValorNetoApo', 'ate_FissalValorConsumo', 'ate_esESSALUD', 'ate_esESSALUD_Documento', 'ate_esESSALUD_FecAct', 'ate_FinalidadAjuste', 'ate_AfiIdTablaGO', 'ate_AfiIdNumRegGO', 'ate_fissalConvenio', 'ate_Finalidad2012', 'ate_Finalidad2012_Ant', 'SubPrograma_Funcional_Ant', 'Programa_PPTAL_Ant', 'Producto_Proyecto_Ant', 'Activ_Obra_Accinv_Ant', 'Nivel_Ant', 'ate_estado_observacion_psa', 'ate_ue', 'ate_capita2013', 'ate_capita_grep', 'ate_idgrupo', 'ate_idfinanciamiento', 'ate_grupopoblacional', 'FechaReporte_ate', 'ate_fecinghosp', 'ate_fecaltahosp', 'ate_historiaclinica', 'afiins_tabla', 'afiins_tabla_id', 'ASEG_C_RENIECVALIDA', 'ASEG_D_RENIECFECACT', 'ASEG_V_UBIGEORESID', 'ASEG_V_IDEESSADSCRIP', 'ASEG_V_ESGRUPOFOCSISFOH', 'ASEG_V_NROCONTRATO', 'ASEG_C_ESTADO', 'ASEG_V_TIPODOCUMENTO', 'ASEG_V_NRODOCUMENTO', 'Complementario_TieneProcServ', 'Complementario_CantProcServ', 'Complementario_ValorBrutoFinal', 'Complementario_ValorBrutoRRHH', 'Complementario_ValorNetoFinal', 'Complementario_ValorNetoRRHH', 'ate_plan_sonreir', 'ate_codinstitucion', 'Ate_esMuestraPriorizada', 'ATE_IDTIPCONVENIO', 'Convenio', 'ValorBruto_SIS', 'ValorBrutoSer_SIS', 'ValorBrutoMed_SIS', 'ValorBrutoIns_SIS', 'ValorBrutoApo_SIS', 'ValorNeto_SIS', 'ValorNetoSer_SIS', 'ValorNetoMed_SIS', 'ValorNetoIns_SIS', 'ValorNetoApo_SIS', 'ATE_VALORNETO_SME', 'ATE_VALORNETOSER_SME', 'ATE_VALORNETOINS_SME', 'ATE_VALORNETOMED_SME', 'ATE_VALORNETOPRO_SME', 'ATE_FISSALVALORNETO_SME', 'ATE_FISSALVALORNETOAPO_SME', 'ATE_FISSALVALORNETOINS_SME', 'ATE_FISSALVALORNETOMED_SME', 'ATE_FISSALVALORSERV_SME', 'ATE_SIS_NETO_SME', 'ATE_SISPRO_NETO_SME', 'ATE_SISSER_NETO_SME', 'ATE_SISINS_NETO_SME', 'ATE_SISMED_NETO_SME', 'ATE_PLAN', 'ATE_V_TIPOSEGURO', 'ATE_ESNUEVOFORMATO', 'ATE_RENIPRESS', 'Fuente_Financiamiento', 'ATE_IDMECANISMOPAGO', 'Mecanismo_Pago', 'ATE_NIVEL_VALORIZACION']">
                         <template #header>
                             <div class="flex justify-between items-center p-4">
-                                <h3 class="text-xl font-semibold text-gray-800"></h3>
+                                <h3 class="text-xl font-semibold text-gray-800">i_atencioncierre</h3>
                                 <div>
                                     <InputText v-model="filters.global.value" placeholder="Buscar..."
                                         class="p-inputtext-sm" />
@@ -53,29 +53,25 @@
                             </div>
                         </template>
                         <!-- Definición de las columnas -->
-                        <Column field="ate_dnipersonalsalud" header="Personal" sortable style="min-width: 2rem" />
-                        <Column field="ate_dni" header="Paciente" sortable style="min-width: 2rem" />
-                        <Column field="nombre_completo" header="Apellidos" sortable class="min-w-[12rem]" />
-                        <Column field="nombres" header="Nombres" sortable class="min-w-[12rem]" />
-                        <Column field="Observado_SME" header="Observaciones" style="min-width: 2rem" />
-                        <Column field="CodigoEESS" header="C. EESS" sortable style="min-width: 2rem" />
-                        <Column field="destino" header="Destino" sortable style="min-width: 2rem" />
-                        <Column field="ValorNeto" header="Neto" sortable style="min-width: 2rem" />
-                        <Column field="valorNetoServ" header="Servicio" sortable style="min-width: 2rem" />
-                        <Column field="ValorBruto" header="Bruto" sortable style="min-width: 2rem" />
                         <Column field="Periodo" header="Periodo" sortable style="min-width: 2rem" />
                         <Column field="Mes" header="Mes" sortable style="min-width: 2rem" />
-                        <Column field="Observado_PSA" header="Observado PSA" sortable style="min-width: 2rem" />
+                        <column field="Observado_PSA" header="Observaciones PSA" style="min-width: 2rem" />
+                        <Column field="Observado_SME" header="Observaciones SME" style="min-width: 2rem" />
                         <Column field="Disa" header="Disa" sortable style="min-width: 2rem" />
+                        <Column field="CodigoEESS" header="C. EESS" sortable style="min-width: 2rem" />
                         <Column field="Ejecutora" header="Ejecutora" sortable style="min-width: 2rem" />
                         <Column field="Categoria" header="Categoria" sortable style="min-width: 2rem" />
                         <Column field="Servicio" header="Servicio" sortable style="min-width: 2rem" />
-                        <Column field="ServicioDesc" header="Descripción Servicio" sortable style="min-width: 2rem" />
+                        <Column field="ServicioDesc" header="Servicio Descripción" sortable style="min-width: 2rem" />
                         <Column field="ate_codate" header="Código ATE" sortable style="min-width: 2rem" />
                         <Column field="ate_coddestino" header="Código Destino" sortable style="min-width: 2rem" />
+                        <column field="destino" header="destino" sortable style="min-width: 2rem" />
+                        <Column field="ValorNeto" header="Valor Neto" sortable style="min-width: 2rem" />
+                        <Column fiel="valorNetoServ" header="Valor Neto Servicio" sortable style="min-width: 2rem" />
                         <Column field="valorNetoMedi" header="Neto Medicamentos" sortable style="min-width: 2rem" />
                         <Column field="valorNetoProc" header="Neto Procedimientos" sortable style="min-width: 2rem" />
                         <Column field="valorNetoInsu" header="Neto Insumos" sortable style="min-width: 2rem" />
+                        <Column field="ValorBruto" header="Valor Bruto" sortable style="min-width: 2rem" />
                         <Column field="valorBrutoServ" header="Bruto Servicios" sortable style="min-width: 2rem" />
                         <Column field="valorbrutoMedi" header="Bruto Medicamentos" sortable style="min-width: 2rem" />
                         <Column field="valorbrutopro" header="Bruto Procedimientos" sortable style="min-width: 2rem" />
@@ -128,6 +124,7 @@
                         <Column field="Activ_Obra_Accinv" header="Activ Obra Accinv" sortable style="min-width: 2rem" />
                         <Column field="Nivel" header="Nivel" sortable style="min-width: 2rem" />
                         <Column field="ate_coddiag1" header="Código Diagnóstico" sortable style="min-width: 2rem" />
+                        <Column field="ate_dni" header="DNI" sortable style="min-width: 2rem" />
                         <Column field="region" header="Región" sortable style="min-width: 2rem" />
                         <Column field="ComponenteGestion" header="Componente Gestión" sortable style="min-width: 2rem" />
                         <Column field="ComponenteReposicion" header="Componente Reposición" sortable style="min-width: 2rem" />
@@ -243,7 +240,7 @@
             <ProgressSpinner />
         </div>
         <!-- Diálogo para mostrar los detalles del registro -->
-        <Dialog v-model:visible="dialogVisible" maximizable modal header="Detalle"
+        <Dialog v-model:visible="dialogVisible" maximizable modal header="i_atencioncierre_consumosmed"
             :style="{ width: '50rem' }" :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
             :contentStyle="{ position: 'relative' }">
             <DataTable ref="dt" v-model:selection="selectedProducts" :value="detalleData" dataKey="id" :paginator="true"
@@ -254,29 +251,29 @@
                 <template #header>
                 </template>
                 <!-- Tabla con los datos cargados -->
-                <Column field="TIPOCONSUMO" header="Tipo Consumo" />
-                <Column field="IDNUMREG" header="ID Número Registro" />
-                <Column field="IDNUMREGATE" header="ID Número Registro Ate" />
-                <Column field="CODIGO" header="Código" />
-                <Column field="CANTIDAD" header="Cantidad" />
-                <Column field="CANTIDADAPROBADA" header="Cantidad Aprobada" />
-                <Column field="PRECIOAPLICADO" header="Precio Aplicado" />
-                <Column field="PRECIO_NETO" header="Precio Neto" />
-                <Column field="TIPOPRECIO" header="Tipo Precio" />
-                <Column field="PRECIOAPLICADO_REPOS" header="Precio Aplicado Reposición" />
-                <Column field="NUMREGPRA_REPOS" header="Número Registro PRA Reposición" />
-                <Column field="TIPOPRECIO_REPOS" header="Tipo Precio Reposición" />
-                <Column field="ESFISSAL" header="Es Fiscal" />
-                <Column field="TIPOPRECIO_ANT" header="Precio Anterior" />
-                <Column field="TIPO_PAGO" header="Tipo Pago" />
-                <Column field="ESTADO_OBSERVACION" header="Estado Observación" />
-                <Column field="ATE_UE" header="Código UE" />
-                <Column field="MESPROD_CONSUMO" header="Mes Producto Consumo" />
-                <Column field="NRODIA" header="Número Día" />
-                <Column field="PRECIO_BRUTO" header="Precio Bruto" />
-                <Column field="ESTADO_OBSERVACION_SME" header="Estado Observación SME" />
-                <Column field="CANTIDADAPROBADA_SME" header="Cantidad Aprobada SME" />
-                <Column field="PRECIO_NETO_SME" header="Precio Neto SME" />
+                <Column field="TIPOCONSUMO" header="TIPOCONSUMO" />
+                <Column field="IDNUMREG" header="IDNUMREG" />
+                <Column field="IDNUMREGATE" header="IDNUMREGATE" />
+                <Column field="CODIGO" header="CODIGO" />
+                <Column field="CANTIDAD" header="CANTIDAD" />
+                <Column field="CANTIDADAPROBADA" header="CANTIDADAPROBADA" />
+                <Column field="PRECIOAPLICADO" header="PRECIOAPLICADO" />
+                <Column field="PRECIO_NETO" header="PRECIO_NETO" />
+                <Column field="TIPOPRECIO" header="TIPOPRECIO" />
+                <Column field="PRECIOAPLICADO_REPOS" header="PRECIOAPLICADO_REPOS" />
+                <Column field="NUMREGPRA_REPOS" header="NUMREGPRA_REPOS" />
+                <Column field="TIPOPRECIO_REPOS" header="TIPOPRECIO_REPOS" />
+                <Column field="ESFISSAL" header="ESFISSAL" />
+                <Column field="TIPOPRECIO_ANT" header="TIPOPRECIO_ANT" />
+                <Column field="TIPO_PAGO" header="TIPO_PAGO" />
+                <Column field="ESTADO_OBSERVACION" header="ESTADO_OBSERVACION" />
+                <Column field="ATE_UE" header="ATE_UE" />
+                <Column field="MESPROD_CONSUMO" header="MESPROD_CONSUMO" />
+                <Column field="NRODIA" header="NRODIA" />
+                <Column field="PRECIO_BRUTO" header="PRECIO_BRUTO" />
+                <Column field="ESTADO_OBSERVACION_SME" header="ESTADO_OBSERVACION_SME" />
+                <Column field="CANTIDADAPROBADA_SME" header="CANTIDADAPROBADA_SME" />
+                <Column field="PRECIO_NETO_SME" header="PRECIO_NETO_SME" />
             </DataTable>
         </Dialog>
 
@@ -318,10 +315,11 @@
     const totalRecords = ref(0);
     const currentPage = ref(1);
     const perPage = ref(100);
+    const startYear = 2024;
+    const years = Array.from({ length: 7 }, (_, i) => String(startYear + i));
+
+    console.log(years);
     const currentYear = new Date().getFullYear();
-    const years = Array.from({
-        length: 7
-    }, (_, i) => String(currentYear + i));
     const ejecutoras = ['900', '1117', '901'];
     const months = [{
             name: 'Enero',
