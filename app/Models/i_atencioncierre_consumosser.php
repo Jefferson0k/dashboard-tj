@@ -9,7 +9,7 @@ class i_atencioncierre_consumosser extends Model{
 
     use HasFactory;
     protected $table = 'i_atencioncierre_consumosser';
-    protected $primaryKey = 'IDNUMREGATE';
+    protected $primaryKey = 'IDNUMREG';
 
     public $incrementing = false;
 
@@ -40,6 +40,6 @@ class i_atencioncierre_consumosser extends Model{
 
     public function atencioncierre()
     {
-        return $this->belongsTo(i_atencioncierreModels::class, 'IDNUMREG', 'ate_idnumreg');
+        return $this->belongsTo(i_atencioncierreModels::class, 'IDNUMREGATE', 'ate_idnumreg');
     }
 }

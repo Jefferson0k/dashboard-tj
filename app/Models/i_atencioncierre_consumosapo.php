@@ -5,22 +5,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class i_atencioncierre_consumosins extends Model{
+class i_atencioncierre_consumosapo extends Model
+{
     use HasFactory;
     protected $table = 'i_atencioncierre_consumosins';
     protected $primaryKey = 'IDNUMREG';
 
-    // Si no es auto-incremental
     public $incrementing = false;
 
-    // Si no es un entero, define el tipo (por ejemplo, 'string' si es un texto)
     protected $keyType = 'string';
 
     protected $fillable = [
         'TIPOCONSUMO',
         'IDNUMREG',
         'IDNUMREGATE',
-        'CODIGO',
+        'CODIGO_CPT',
+        'CODIGO_CPMS',
         'CANTIDAD',
         'CANTIDADAPROBADA',
         'PRECIOAPLICADO',
@@ -35,6 +35,8 @@ class i_atencioncierre_consumosins extends Model{
         'ESTADO_OBSERVACION',
         'ATE_UE',
         'MESPROD_CONSUMO',
+        'COMPLEMENTARIO_ESPROCSERV',
+        'COMPLEMENTARIO_TARIFARRHH',
         'NRODIA',
         'PRECIO_BRUTO',
         'ESTADO_OBSERVACION_SME',
@@ -46,4 +48,5 @@ class i_atencioncierre_consumosins extends Model{
     {
         return $this->belongsTo(i_atencioncierreModels::class, 'IDNUMREGATE', 'ate_idnumreg');
     }
+
 }

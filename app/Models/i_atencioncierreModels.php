@@ -186,6 +186,21 @@ class i_atencioncierreModels extends Model{
 
     public function consumosmed()
     {
-        return $this->hasMany(i_atencioncierre_consumosmed::class, 'IDNUMREG', 'ate_idnumreg');
+        return $this->hasMany(i_atencioncierre_consumosmed::class, 'IDNUMREGATE', 'ate_idnumreg');
+    }
+
+    public function consumoapo()
+    {
+        return $this->hasMany(i_atencioncierre_consumosapo::class, 'IDNUMREGATE', 'ate_idnumreg');
+    }
+
+    public function consumoser()
+    {
+        return $this->hasMany(i_atencioncierre_consumosser::class, 'IDNUMREGATE', 'ate_idnumreg');
+    }
+
+    public function consumoins()
+    {
+        return $this->hasMany(i_atencioncierre_consumosins::class, 'IDNUMREGATE', 'ate_idnumreg');
     }
 }

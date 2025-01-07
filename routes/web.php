@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ConsumoApoController;
 use App\Http\Controllers\Api\ConsumoInsController;
 use App\Http\Controllers\Api\ConsumoSerController;
 use App\Http\Controllers\ProfileController;
@@ -29,6 +30,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/atencion-cierre-consumosmed/{idnumregate}', [FraccionVentaController::class, 'show']);
     Route::get('/atencion-cierre-consumosins/{idnumregate}', [ConsumoInsController::class, 'show']);
     Route::get('/atencion-cierre-consumoses/{idnumregate}', [ConsumoSerController::class, 'show']);
+    Route::get('/atencion-cierre-consumoapo/{idnumregate}', [ConsumoApoController::class, 'show']);
 });
 
 require __DIR__.'/auth.php';

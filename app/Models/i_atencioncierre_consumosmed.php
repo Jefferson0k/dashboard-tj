@@ -12,7 +12,7 @@ class i_atencioncierre_consumosmed extends Model
     protected $table = 'i_atencioncierre_consumosmed';
 
     // Especifica la llave primaria
-    protected $primaryKey = 'IDNUMREGATE';
+    protected $primaryKey = 'IDNUMREG';
 
     // Si no es auto-incremental
     public $incrementing = false;
@@ -23,7 +23,7 @@ class i_atencioncierre_consumosmed extends Model
     protected $fillable = [
         'TIPOCONSUMO',
         'IDNUMREG',
-        'IDNUMREGATE',
+        'IDNUMREGATE', //Roranea
         'CODIGO',
         'CANTIDAD',
         'CANTIDADAPROBADA',
@@ -48,6 +48,6 @@ class i_atencioncierre_consumosmed extends Model
 
     public function atencioncierre()
     {
-        return $this->belongsTo(i_atencioncierreModels::class, 'IDNUMREG', 'ate_idnumreg');
+        return $this->belongsTo(i_atencioncierreModels::class, 'IDNUMREGATE', 'ate_idnumreg');
     }
 }
