@@ -231,145 +231,48 @@
                                     @click="verDetalle(slotProps.data.ate_idnumreg)"></i>
                             </template>
                         </Column>
-                        <Column class="min-w-[1rem]">
-                            <template #body="slotProps">
-                                <i class="pi pi-eye text-red-700 cursor-pointer"
-                                    :title="'ins ' + slotProps.data.Periodo"
-                                    @click="verDetalle1(slotProps.data.ate_idnumreg)"></i>
-                            </template>
-                        </Column>
-                        <Column class="min-w-[1rem]">
-                            <template #body="slotProps">
-                                <i class="pi pi-eye text-indigo-600 cursor-pointer"
-                                    :title="'Ser ' + slotProps.data.Periodo"
-                                    @click="verDetalle2(slotProps.data.ate_idnumreg)"></i>
-                            </template>
-                        </Column>
                     </DataTable>
                 </template>
             </Card>
         </div>
-        <!-- Spinner global -->
-        <div v-if="loadingDetail" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <ProgressSpinner />
-        </div>
-        <!-- Diálogo para mostrar los detalles del registro -->
-        <Dialog v-model:visible="dialogVisible" maximizable modal header="i_atencioncierre_consumosmed"
-            :style="{ width: '50rem' }" :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
-            :contentStyle="{ position: 'relative' }">
-            <DataTable ref="dt" v-model:selection="selectedProducts" :value="detalleData" dataKey="id" :paginator="true"
-                :rows="5" :filters="filters"
-                paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
-                :rowsPerPageOptions="[5, 10, 25]"
-                currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} Detalle">
-                <template #header>
-                </template>
-                <!-- Tabla con los datos cargados -->
-                <Column field="TIPOCONSUMO" header="TIPOCONSUMO" />
-                <Column field="IDNUMREG" header="IDNUMREG" />
-                <Column field="IDNUMREGATE" header="IDNUMREGATE" />
-                <Column field="CODIGO" header="CODIGO" />
-                <Column field="CANTIDAD" header="CANTIDAD" />
-                <Column field="CANTIDADAPROBADA" header="CANTIDADAPROBADA" />
-                <Column field="PRECIOAPLICADO" header="PRECIOAPLICADO" />
-                <Column field="PRECIO_NETO" header="PRECIO_NETO" />
-                <Column field="TIPOPRECIO" header="TIPOPRECIO" />
-                <Column field="PRECIOAPLICADO_REPOS" header="PRECIOAPLICADO_REPOS" />
-                <Column field="NUMREGPRA_REPOS" header="NUMREGPRA_REPOS" />
-                <Column field="TIPOPRECIO_REPOS" header="TIPOPRECIO_REPOS" />
-                <Column field="ESFISSAL" header="ESFISSAL" />
-                <Column field="TIPOPRECIO_ANT" header="TIPOPRECIO_ANT" />
-                <Column field="TIPO_PAGO" header="TIPO_PAGO" />
-                <Column field="ESTADO_OBSERVACION" header="ESTADO_OBSERVACION" />
-                <Column field="ATE_UE" header="ATE_UE" />
-                <Column field="MESPROD_CONSUMO" header="MESPROD_CONSUMO" />
-                <Column field="NRODIA" header="NRODIA" />
-                <Column field="PRECIO_BRUTO" header="PRECIO_BRUTO" />
-                <Column field="ESTADO_OBSERVACION_SME" header="ESTADO_OBSERVACION_SME" />
-                <Column field="CANTIDADAPROBADA_SME" header="CANTIDADAPROBADA_SME" />
-                <Column field="PRECIO_NETO_SME" header="PRECIO_NETO_SME" />
-            </DataTable>
-        </Dialog>
         
-        <!-- Spinner global -->
         <div v-if="loadingDetail" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
             <ProgressSpinner />
         </div>
-        <!-- Diálogo para mostrar los detalles del registro -->
-        <Dialog v-model:visible="dialogVisible1" maximizable modal header="i_atencioncierre_consumosins"
-            :style="{ width: '50rem' }" :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
-            :contentStyle="{ position: 'relative' }">
-            <DataTable ref="dt" v-model:selection="selectedProducts" :value="detalleData" dataKey="id" :paginator="true"
-                :rows="5" :filters="filters"
+        <Dialog
+            v-model:visible="dialogVisible"
+            maximizable
+            modal
+            header="Detalle de Registros"
+            :style="{ width: '80vw' }"
+            :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
+            :contentStyle="{ position: 'relative' }"
+        >
+            <div v-for="(section, key) in detalleData" :key="key" class="mb-5">
+            <!-- Encabezado -->
+            <h3 :class="headerClass(key)" class="text-lg font-bold mb-2">
+                {{ getHeaderText(key) }}
+            </h3>
+            <!-- Tabla -->
+            <DataTable
+                v-if="section.data.length"
+                :value="section.data"
+                dataKey="IDNUMREG"
+                :paginator="true"
+                :rows="5"
                 paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
                 :rowsPerPageOptions="[5, 10, 25]"
-                currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} Detalle">
-                <template #header>
-                </template>
-                <!-- Tabla con los datos cargados -->
-                <Column field="TIPOCONSUMO" header="TIPOCONSUMO" />
-                <Column field="IDNUMREG" header="IDNUMREG" />
-                <Column field="IDNUMREGATE" header="IDNUMREGATE" />
-                <Column field="CODIGO" header="CODIGO" />
-                <Column field="CANTIDAD" header="CANTIDAD" />
-                <Column field="CANTIDADAPROBADA" header="CANTIDADAPROBADA" />
-                <Column field="PRECIOAPLICADO" header="PRECIOAPLICADO" />
-                <Column field="PRECIO_NETO" header="PRECIO_NETO" />
-                <Column field="TIPOPRECIO" header="TIPOPRECIO" />
-                <Column field="PRECIOAPLICADO_REPOS" header="PRECIOAPLICADO_REPOS" />
-                <Column field="NUMREGPRA_REPOS" header="NUMREGPRA_REPOS" />
-                <Column field="TIPOPRECIO_REPOS" header="TIPOPRECIO_REPOS" />
-                <Column field="ESFISSAL" header="ESFISSAL" />
-                <Column field="TIPOPRECIO_ANT" header="TIPOPRECIO_ANT" />
-                <Column field="TIPO_PAGO" header="TIPO_PAGO" />
-                <Column field="ESTADO_OBSERVACION" header="ESTADO_OBSERVACION" />
-                <Column field="ATE_UE" header="ATE_UE" />
-                <Column field="MESPROD_CONSUMO" header="MESPROD_CONSUMO" />
-                <Column field="NRODIA" header="NRODIA" />
-                <Column field="PRECIO_BRUTO" header="PRECIO_BRUTO" />
-                <Column field="ESTADO_OBSERVACION_SME" header="ESTADO_OBSERVACION_SME" />
-                <Column field="CANTIDADAPROBADA_SME" header="CANTIDADAPROBADA_SME" />
-                <Column field="PRECIO_NETO_SME" header="PRECIO_NETO_SME" />
+                currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} registros"
+            >
+                <Column
+                v-for="column in section.columns"
+                :key="column"
+                :field="column"
+                :header="column"
+                />
             </DataTable>
-        </Dialog>
-
-        <!-- Spinner global -->
-        <div v-if="loadingDetail" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <ProgressSpinner />
-        </div>
-        <!-- Diálogo para mostrar los detalles del registro -->
-        <Dialog v-model:visible="dialogVisible2" maximizable modal header="i_atencioncierre_consumosser"
-            :style="{ width: '50rem' }" :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
-            :contentStyle="{ position: 'relative' }">
-            <DataTable ref="dt" v-model:selection="selectedProducts" :value="detalleData" dataKey="id" :paginator="true"
-                :rows="5" :filters="filters"
-                paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
-                :rowsPerPageOptions="[5, 10, 25]"
-                currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} Detalle">
-                <template #header>
-                </template>
-                <!-- Tabla con los datos cargados -->
-                <Column field="IDNUMREG" header="IDNUMREG" />
-                <Column field="IDNUMREGATE" header="IDNUMREGATE" />
-                <Column field="ASER_IDSERVICIO" header="ASER_IDSERVICIO" />
-                <Column field="PRECIOUNIT_SERV" header="PRECIOUNIT_SERV" />
-                <Column field="ASER_TIPO_PAGO" header="ASER_TIPO_PAGO" />
-                <Column field="ASER_FISSAL" header="ASER_FISSAL" />
-                <Column field="ASER_FINALIDAD" header="ASER_FINALIDAD" />
-                <Column field="ASER_CAPITA" header="ASER_CAPITA" />
-                <Column field="ASER_IDFINANCIAMIENTO" header="ASER_IDFINANCIAMIENTO" />
-                <Column field="ASER_IDTARIFA" header="ASER_IDTARIFA" />
-                <Column field="ASER_IDSERVICIO_P" header="ASER_IDSERVICIO_P" />
-                <Column field="ASER_FISSAL_P" header="ASER_FISSAL_P" />
-                <Column field="ASER_CAPITA_P" header="ASER_CAPITA_P" />
-                <Column field="ASER_VALAORSERV_P" header="ASER_VALAORSERV_P" />
-                <Column field="ASER_FISSALVALORSERV_P" header="ASER_FISSALVALORSERV_P" />
-                <Column field="ASER_TIPO_PAGO_P" header="ASER_TIPO_PAGO_P" />
-                <Column field="ASER_IDTARIFA_P" header="ASER_IDTARIFA_P" />
-                <Column field="ASER_IDFINANCIAMIENTO_P" header="ASER_IDFINANCIAMIENTO_P" />
-                <Column field="VALOR_NETO" header="VALOR_NETO" />
-                <Column field="MESPROD_CONSUMO" header="MESPROD_CONSUMO" />
-            </DataTable>
+            <p v-else class="text-gray-500 italic">No hay datos disponibles para esta sección.</p>
+            </div>
         </Dialog>
 
     </AuthenticatedLayout>
@@ -377,9 +280,6 @@
 
 <script setup>
     import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-    import {
-        Head
-    } from '@inertiajs/vue3';
     import {
         ref,
         watch
@@ -404,7 +304,6 @@
             value: null
         }
     });
-    const selectedRow = ref(null)
     const loading = ref(false);
     const loadingDetail = ref(false);
     const totalRecords = ref(0);
@@ -414,7 +313,6 @@
     const years = Array.from({ length: 7 }, (_, i) => String(startYear + i));
 
     console.log(years);
-    const currentYear = new Date().getFullYear();
     const ejecutoras = ['900', '1117', '901'];
     const months = [{
             name: 'Enero',
@@ -465,12 +363,10 @@
             value: '12'
         }
     ];
-    const dialogVisible = ref(false);
-    const dialogVisible1 = ref(false);
-    const dialogVisible2 = ref(false);
 
-    const selectedRecord = ref(null);
+    const dialogVisible = ref(false);
     const detalleData = ref([]);
+
     const fetchData = async (page = 1) => {
         loading.value = true;
         fraccionventas.value = [];
@@ -503,55 +399,44 @@
         perPage.value = event.rows;
         fetchData(currentPage.value);
     };
+    
+    // Función para obtener los datos
     const verDetalle = async (id) => {
         loadingDetail.value = true;
         dialogVisible.value = false;
         try {
             const response = await axios.get(`/atencion-cierre-consumosmed/${id}`);
-            if (response.data && response.data.data) {
-                detalleData.value = response.data.data;
-            }
+            console.log('Data recibida:', response.data.data);
+            detalleData.value = response.data.data || {};
         } catch (err) {
             console.error('Error al obtener los detalles:', err);
-            detalleData.value = [];
+            detalleData.value = {};
         } finally {
             loadingDetail.value = false;
             dialogVisible.value = true;
         }
     };
-    
-    const verDetalle1 = async (id) => {
-        loadingDetail.value = true;
-        dialogVisible1.value = false;
-        try {
-            const response = await axios.get(`/atencion-cierre-consumosins/${id}`);
-            if (response.data && response.data.data) {
-                detalleData.value = response.data.data;
-            }
-        } catch (err) {
-            console.error('Error al obtener los detalles:', err);
-            detalleData.value = [];
-        } finally {
-            loadingDetail.value = false;
-            dialogVisible1.value = true;
-        }
+
+    // Función para obtener el encabezado según la clave
+    const getHeaderText = (key) => {
+        const headers = {
+            consumosMed: 'Consumos Medicamentos',
+            consumosApo: 'Consumos Apoyo',
+            consumosIns: 'Consumos Insumos',
+            consumosSer: 'Consumos Servicios',
+        };
+        return headers[key] || 'Sección Desconocida';
     };
 
-    const verDetalle2 = async (id) => {
-        loadingDetail.value = true;
-        dialogVisible2.value = false;
-        try {
-            const response = await axios.get(`/atencion-cierre-consumoses/${id}`);
-            if (response.data && response.data.data) {
-                detalleData.value = response.data.data;
-            }
-        } catch (err) {
-            console.error('Error al obtener los detalles:', err);
-            detalleData.value = [];
-        } finally {
-            loadingDetail.value = false;
-            dialogVisible2.value = true;
-        }
+    // Función para asignar clases a los encabezados
+    const headerClass = (key) => {
+        const classes = {
+            consumosMed: 'text-green-600',
+            consumosApo: 'text-blue-600',
+            consumosIns: 'text-yellow-600',
+            consumosSer: 'text-red-600',
+        };
+        return classes[key] || 'text-gray-600';
     };
 
     watch([periodo, mes, ejecutora, () => filters.value ?.global ?.value], () => fetchData(1), {
